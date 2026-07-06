@@ -1,0 +1,32 @@
+/* components/InfoBar.css */
+
+.info-bar {
+  background: #2A2620;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #E4EEE7;
+  font-size: 12px;
+}
+
+.info-item svg {
+  flex-shrink: 0;
+  color: #B5697A;
+}
+
+/* Tablet and up: lay out horizontally, centered. */
+@media (min-width: 768px) {
+  .info-bar {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 14px 48px;
+  }
+}

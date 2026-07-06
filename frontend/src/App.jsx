@@ -1,10 +1,12 @@
 // App.jsx
 import { useState } from 'react';
 import Hero from './components/Hero';
+import InfoBar from './components/InfoBar';
 import Services from './components/Services';
 import Booking from './components/Booking';
 import Login from './components/Login';
 import Panel from './components/Panel';
+import Footer from './components/Footer';
 
 function App() {
   const [currentView, setCurrentView] = useState('public');
@@ -26,6 +28,7 @@ function App() {
   return (
     <div>
       <Hero onLoginClick={() => setCurrentView('login')} />
+      <InfoBar />
 
       <main>
         {currentView === 'public' && !selectedService && (
@@ -44,6 +47,8 @@ function App() {
           <Panel business={loggedInBusiness} />
         )}
       </main>
+
+      <Footer />
     </div>
   );
 }

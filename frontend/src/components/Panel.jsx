@@ -1,6 +1,8 @@
 // components/Panel.jsx
 import { useState } from 'react';
 import Dashboard from './Dashboard';
+import ServicesManager from './ServicesManager';
+import AvailabilityManager from './AvailabilityManager'; // ADD THIS
 import './Panel.css';
 
 function Panel({ business }) {
@@ -36,8 +38,8 @@ function Panel({ business }) {
 
       <div className="panel-content">
         {activeTab === 'bookings' && <Dashboard />}
-        {activeTab === 'services' && <p>Acá va la gestión de servicios</p>}
-        {activeTab === 'availability' && <p>Acá va la gestión de horarios</p>}
+        {activeTab === 'services' && <ServicesManager />}
+        {activeTab === 'availability' && <AvailabilityManager />}
       </div>
     </section>
   );

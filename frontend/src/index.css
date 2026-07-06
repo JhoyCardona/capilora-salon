@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
 body {
   font-family: system-ui, -apple-system, sans-serif;
   color: #1a1a1a;
@@ -18,4 +22,19 @@ button {
 
 input, select {
   font-family: inherit;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+#root > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+main {
+  flex: 1;
 }

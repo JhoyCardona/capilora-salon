@@ -1,0 +1,103 @@
+/* components/ServicesManager.css */
+
+.manager-status {
+  font-size: 13px;
+  color: #8C8672;
+  padding: 12px 0;
+}
+
+.manager-error {
+  color: #993C1D;
+}
+
+.manager-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.manager-item {
+  background: #FFFFFF;
+  border: 0.5px solid #D8D3C4;
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manager-item h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2A2620;
+  margin: 0 0 2px;
+}
+
+.manager-item p {
+  font-size: 12px;
+  color: #8C8672;
+  margin: 0;
+}
+
+.manager-delete-btn {
+  background: none;
+  border: 0.5px solid #993C1D;
+  color: #993C1D;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.manager-delete-btn:disabled {
+  opacity: 0.5;
+}
+
+.manager-form {
+  background: #FFFFFF;
+  border: 0.5px solid #D8D3C4;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+}
+
+.manager-form-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2A2620;
+  margin: 0 0 16px;
+}
+
+.manager-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2A2620;
+  margin-bottom: 6px;
+}
+
+.manager-input {
+  padding: 8px 10px;
+  border: 0.5px solid #D8D3C4;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 14px;
+  background: #F4F2EC;
+}
+
+.manager-submit {
+  background: #2F4F3E;
+  color: #F4F2EC;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.manager-submit:disabled {
+  opacity: 0.6;
+}

@@ -83,3 +83,21 @@ export async function apiPatchAuth(path) {
 
   return response.json();
 }
+
+export async function apiDeleteAuth(path) {
+  const token = localStorage.getItem('authToken');
+
+  const response = await fetch(`${API_BASE_URL}${path}`, {
+    method: 'DELETE',
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
+  if (!response.ok) {
+    const errorData = await response.json();
+    throw new Error(errorData.error || 'Something went wrong');
+  }
+
+  return true;
+}

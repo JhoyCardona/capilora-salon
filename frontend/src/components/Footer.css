@@ -1,0 +1,65 @@
+/* components/Footer.css */
+
+.footer {
+  background: #2A2620;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer-logo {
+  color: #F4F2EC;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.footer-brand p {
+  color: #A39D8C;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-icon {
+  color: #F4F2EC;
+  background: rgba(244, 242, 236, 0.1);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  color: #6E6A5C;
+  font-size: 11px;
+  margin: 0;
+}
+
+/* Tablet and up: brand left, social + copyright arranged with more space. */
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 32px 48px;
+  }
+
+  .footer-copyright {
+    order: 3;
+  }
+}
