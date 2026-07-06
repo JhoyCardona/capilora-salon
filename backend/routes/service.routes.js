@@ -4,13 +4,16 @@ const router = express.Router();
 const {
   createService,
   listServices,
+  listPublicServices,
   updateService,
   deleteService,
 } = require('../controllers/service.controller');
 const authenticateBusiness = require('../middleware/auth.middleware');
 
-// Every route here requires a valid token — a business can only
-// manage its own services.
+// Public route: anyone can see a business's services without logging in.
+router.get('/public', listPublicServices);
+
+// Every route here requires a valid token.
 router.post('/', authenticateBusiness, createService);
 router.get('/', authenticateBusiness, listServices);
 router.put('/:id', authenticateBusiness, updateService);

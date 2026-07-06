@@ -39,6 +39,27 @@ async function listServices(req, res) {
   }
 }
 
+// PUBLIC: list a business's services for the public booking page (no login required).
+async function listPublicServices(req, res) {
+  const { business_id } = req.query;
+
+  if (!business_id) {
+    return res.status(400).json({ error: 'business_id query parameter is required' });
+  }
+
+  try {
+    const result = await pool.query(
+      'SELECT id, name, duration_minutes FROM service WHERE business_id = $1 ORDER BY id',
+      [business_id]
+    );
+
+    res.json(result.rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Something went wrong fetching services' });
+  }
+}
+
 // UPDATE a service, but only if it belongs to the logged-in business.
 async function updateService(req, res) {
   const { id } = req.params;
@@ -89,4 +110,4 @@ async function deleteService(req, res) {
   }
 }
 
-module.exports = { createService, listServices, updateService, deleteService };
+module.exports = { createService, listServices, updateService, deleteService, listPublicServices };

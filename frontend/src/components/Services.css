@@ -1,0 +1,69 @@
+/* components/Services.css */
+
+.services {
+  padding: 32px 20px;
+}
+
+.services-eyebrow {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #8C8672;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.service-card {
+  background: #FFFFFF;
+  border: 0.5px solid #D8D3C4;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.service-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2A2620;
+  margin: 0 0 4px;
+}
+
+.service-card p {
+  font-size: 13px;
+  color: #8C8672;
+  margin: 0;
+}
+
+.services-status {
+  padding: 40px 20px;
+  text-align: center;
+  color: #8C8672;
+  font-size: 14px;
+}
+
+.services-error {
+  color: #993C1D;
+}
+
+/* Tablet and up: multiple columns instead of a single stacked list. */
+@media (min-width: 768px) {
+  .services {
+    padding: 48px 48px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Desktop: more breathing room. */
+@media (min-width: 1200px) {
+  .services {
+    padding: 56px 80px;
+  }
+}
