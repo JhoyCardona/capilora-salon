@@ -3,7 +3,7 @@ import './Hero.css';
 import heroImage from '../assets/salon-hero.png';
 import heroVideo from '../assets/salon-hero.mp4';
 
-function Hero() {
+function Hero({ onLoginClick }) {
   return (
     <section className="hero">
       <img src={heroImage} alt="" className="hero-fallback-image" />
@@ -20,7 +20,9 @@ function Hero() {
       <div className="hero-overlay">
         <nav className="hero-nav">
           <span className="hero-logo">CAPILORA</span>
-          <button className="hero-login-btn">Ingresar</button>
+          <button className="hero-login-btn" onClick={onLoginClick}>
+            Ingresar
+          </button>
         </nav>
 
         <div className="hero-content">

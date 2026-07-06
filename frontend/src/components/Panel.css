@@ -1,0 +1,59 @@
+/* components/Panel.css */
+
+.panel {
+  padding: 32px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.panel-header {
+  margin-bottom: 24px;
+}
+
+.panel-eyebrow {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #8C8672;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.panel-header h2 {
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2A2620;
+  margin: 0;
+}
+
+.panel-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 0.5px solid #D8D3C4;
+  margin-bottom: 24px;
+  overflow-x: auto;
+}
+
+.panel-tab {
+  background: none;
+  border: none;
+  padding: 10px 4px;
+  font-size: 14px;
+  color: #8C8672;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  margin-right: 20px;
+}
+
+.panel-tab-active {
+  color: #2F4F3E;
+  font-weight: 600;
+  border-bottom-color: #2F4F3E;
+}
+
+/* Tablet and up: more breathing room. */
+@media (min-width: 768px) {
+  .panel {
+    padding: 48px;
+  }
+}

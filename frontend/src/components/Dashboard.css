@@ -1,0 +1,126 @@
+/* components/Dashboard.css */
+
+.dashboard {
+  padding: 32px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.dashboard-eyebrow {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #8C8672;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.dashboard h2 {
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2A2620;
+  margin: 0 0 24px;
+}
+
+.dashboard-status {
+  font-size: 13px;
+  color: #8C8672;
+  padding: 20px 0;
+}
+
+.dashboard-error {
+  color: #993C1D;
+}
+
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-item {
+  background: #FFFFFF;
+  border: 0.5px solid #D8D3C4;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-item-cancelled {
+  opacity: 0.55;
+}
+
+.booking-item-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2A2620;
+  margin: 0 0 4px;
+}
+
+.booking-item-info p {
+  font-size: 13px;
+  color: #6E6A5C;
+  margin: 0 0 2px;
+}
+
+.booking-item-datetime {
+  font-weight: 600;
+  color: #2F4F3E !important;
+}
+
+.booking-item-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-badge {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.booking-badge-booked {
+  background: #E4EEE7;
+  color: #2F4F3E;
+}
+
+.booking-badge-cancelled {
+  background: #EEE9E3;
+  color: #8C8672;
+}
+
+.booking-cancel-btn {
+  background: none;
+  border: 0.5px solid #993C1D;
+  color: #993C1D;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.booking-cancel-btn:disabled {
+  opacity: 0.5;
+}
+
+/* Tablet and up: cards lay out horizontally instead of stacked. */
+@media (min-width: 768px) {
+  .dashboard {
+    padding: 48px;
+  }
+
+  .booking-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .booking-item-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+}
