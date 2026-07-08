@@ -7,7 +7,7 @@ Sistema completo de reservas para negocios de servicios (peluquerías, spas, con
 
 ## Capturas
 
-<img src="/home/jhoyners-cardona/Pictures/Screenshots/Capilora-Salon-screenshots" alt="imagen del panel principal" width="700">
+<img width="1852" height="1028" alt="screencapture-hair-salon-booking-system-sable-vercel-app-2026-07-06-20_02_38" src="https://github.com/user-attachments/assets/f75265b0-6e5b-41d8-aae7-afa824c76883" />
 
 ## Funcionalidades
 
@@ -32,7 +32,7 @@ Sistema completo de reservas para negocios de servicios (peluquerías, spas, con
 
 ## Arquitectura
 
-El proyecto sigue una arquitectura de 3 capas:<img width="1852" height="1028" alt="screencapture-hair-salon-booking-system-sable-vercel-app-2026-07-06-20_02_38" src="https://github.com/user-attachments/assets/f75265b0-6e5b-41d8-aae7-afa824c76883" />
+El proyecto sigue una arquitectura de 3 capas:
 
 El backend expone una API REST organizada en rutas/controladores/middleware, con:
 - Consultas parametrizadas (protección contra SQL injection)
