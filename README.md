@@ -2,8 +2,8 @@
 
 Sistema completo de reservas para negocios de servicios (peluquerías, spas, consultorios), con vista pública de reserva y panel de administración para el negocio.
 
-🔗 **Demo en vivo:** https://hair-salon-booking-system.vercel.app
-📂 **Repositorio:** https://github.com/JhoyCardona/hair-salon-booking-system
+🔗 **Demo en vivo:** [https://hair-salon-booking-system-sable.vercel.app](https://hair-salon-booking-system-sable.vercel.app/)
+📂 **Repositorio:** [https://hair-salon-booking-system-sable.vercel.app/](https://github.com/JhoyCardona/capilora-salon)
 
 ## Capturas
 
@@ -62,4 +62,4 @@ npm run dev
 
 ## Autor
 
-Desarrollado por Jhoyners Cardona (https://github.com/JhoyCardona).
+Desarrollado por [Jhoyners Cardona] (https://github.com/JhoyCardona).
