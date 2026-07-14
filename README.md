@@ -62,4 +62,4 @@ npm run dev
 
 ## Autor
 
-Desarrollado por [Jhoyners Cardona] (https://github.com/JhoyCardona).
+Desarrollado por [Jhoyners Cardona] (https://github.com/JhoyCardona) (https://www.linkedin.com/in/jhoyners-cardona-dev)
